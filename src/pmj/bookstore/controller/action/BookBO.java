@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import pmj.bookstore.model.BookBean;
 import pmj.bookstore.service.BookService;
+import pmj.bookstore.service.BookServiceFactory;
 import pmj.bookstore.service.BookTO;
 
 public class BookBO {	
@@ -50,6 +51,6 @@ public class BookBO {
 		return book;
 	}	
 	
-	private static BookService service = BookService.getInstance();	
+	private static BookService service = BookServiceFactory.getService();	
 
 }

@@ -3,7 +3,7 @@ package pmj.bookstore.service;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-class BookServiceImpl extends BookService {
+class BookServiceImpl implements BookService {
     
     public BookServiceImpl() {
         stock = new HashMap<String, Book>();
